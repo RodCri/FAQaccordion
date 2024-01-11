@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #f2e6fa;
+}
+
+picture {
+  width: 100%;
+  max-width: 1440px;
+  position: absolute;
+  z-index: -1;
+}
+picture .bg-body {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .faq {
+  width: 90%;
+  margin: 0 auto;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 600px;
+}
+.content .faq__head {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.content .faq__head .faq__title {
+  color: hsl(292deg, 42%, 14%);
+  font-size: 3.4rem;
+  font-weight: 800;
+}
+.content .faq .faq__accordion .faq__content .faq__response {
+  position: relative;
+  margin: 10px 10px;
+}
+.content .faq .faq__accordion .faq__content .faq__response .faq__question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 2.4rem;
+  color: hsl(292deg, 42%, 14%);
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.content .faq .faq__accordion .faq__content .faq__response .faq__question .icon-minus {
+  display: none;
+}
+.content .faq .faq__accordion .faq__content .faq__response .faq__question:hover {
+  color: #b224ea;
+  transition: all 0.3s ease;
+}
+@media (min-width: 900px) {
+  .content .faq .faq__accordion .faq__content .faq__response .faq__question {
+    font-size: 1.7rem;
+  }
+}
+.content .faq .faq__accordion .faq__content .faq__response .faq__resolve {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: hsl(292deg, 16%, 49%);
+}
+@media (min-width: 900px) {
+  .content .faq .faq__accordion .faq__content .faq__response .faq__resolve {
+    font-size: 1.4rem;
+  }
+}
+.content .faq .faq__accordion .faq__content .active .faq__question .icon-minus {
+  display: block;
+}
+.content .faq .faq__accordion .faq__content .active .faq__question .icon-plus {
+  display: none;
+}
+.content .faq .faq__accordion .faq__content .active .faq__resolve {
+  height: 100px;
+}
+@media (min-width: 900px) {
+  .content .faq .faq__accordion .faq__content .active .faq__resolve {
+    height: 70px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
